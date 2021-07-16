@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('./trees.jpg');
+    background-position: 50% 60%;
+    background-size: cover;
+    color: #fff;
+    font-family: Quicksand, sans-serif;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 2rem 0;
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.list-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 0 .7rem;
+    flex: 1;
+    position: relative;
+}
+
+.list-title {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: .8rem 1.2rem;
+    border-radius: 15px;
+    margin: .4rem;
+}
+
+.one { background-color: #a2622d;}
+.two { background-color: #1b6161;}
+.three { background-color: #248224;}
+.four { background-color: #a22d22;}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .4rem;
+    min-height: 20px;
+    height: 100%;
+}
+
+.list-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: .7rem .5rem;
+    margin: .4rem;
+    cursor: pointer;
+}
+
+.add-item {
+    margin: .4rem .7rem;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.add-item:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.over {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.add-item-container {
+    display: flex;
+    flex-direction: column;
+    margin: .4rem .9rem;
+}
+
+.save-item {
+    align-self: flex-end;
+    border: none;
+    color: #fff;
+    padding: .7rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    font-family: Quicksand, sans-serif;
+}
+
+.save-item:hover {
+    filter: brightness(120%);
+}
+
+.input {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+

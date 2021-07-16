@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag 'n' Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title text-shadow">Kanban Board</h1>
+        <div class="columns">
+            <div class="list-container">
+                <h1 class="list-title text-shadow one">To Do</h1>
+                <ul class="list" id="backlog" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter('backlog')">
+                </ul>
+                <button class="add-item">+ Add Item</button>
+            </div>
+            <div class="list-container">
+                <h1 class="list-title text-shadow two">In Progress</h1>
+                <ul class="list" id="progress" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter('progress')">
+                </ul>
+                <button class="add-item">+ Add Item</button>
+            </div>
+            <div class="list-container">
+                <h1 class="list-title text-shadow three">Completed</h1>
+                <ul class="list" id="completed" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter('completed')">
+                </ul>
+                <button class="add-item">+ Add Item</button>
+            </div>
+            <div class="list-container">
+                <h1 class="list-title text-shadow four">On Hold</h1>
+                <ul class="list" id="onhold" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter('onhold')">
+                </ul>
+                <button class="add-item">+ Add Item</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
